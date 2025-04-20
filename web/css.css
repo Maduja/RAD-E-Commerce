@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #e6f7ff;
+}
+
+header {
+    background: #fff;
+    color: #0073e6;
+    padding: 1rem 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 1.5rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 1.5rem;
+}
+
+.nav-links a {
+    color: #0073e6;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.contact {
+    background-image: url('images/contact.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about {
+    background-image: url('images/about_us.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact_us,.about_us {
+    background: rgba(0, 0, 0, 0.5); 
+    color: #fff;
+    padding: 2rem;
+    width: 100%;
+    max-width: 850px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact label,
+.contact input,
+.contact textarea,
+.contact button {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 1rem;
+}
+
+.contact input,
+.contact textarea {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    background: rgba(255, 255, 255, 0.8); 
+}
+
+.contact button {
+    background: #0073e6;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background: #005bb5;
+}
+
+footer {
+    background: #0073e6;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+@media (max-width: 480px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links li {
+        margin: 0.5rem 0;
+    }
+}
